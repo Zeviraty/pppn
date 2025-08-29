@@ -6,3 +6,11 @@ def hash(value: str) -> int:
 
 def distance(a: int, b: int) -> int:
     return a ^ b
+
+class Address():
+    def __init__(self, ip: str, port:int):
+        self.ip = ip
+        self.port = port
+
+    def __repr__(self):
+        return f"{self.ip}:{self.port}"
